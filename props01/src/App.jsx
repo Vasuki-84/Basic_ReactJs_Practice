@@ -13,7 +13,7 @@ function App() {
     <div>
       <Login />
       <Register />
-      <div style={{marginTop: "300px"}}>
+      <div style={{marginTop: "100px"}}>
         {/*  name variable is props, it carries the variable value into Home component  */}
         <Home name={username} userRole={role} />
       </div>

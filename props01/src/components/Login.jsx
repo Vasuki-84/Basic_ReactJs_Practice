@@ -1,21 +1,21 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
+import Input from "./input";
 
 function Login() {
-    const login = () => {
-        alert("Login successfull");
-    }
+  const login = () => {
+    alert("Login successfull");
+  };
   return (
     <div>
-        <h1>Login Form</h1>
-        <input type='email' placeholder='Enter your email'/>
-        <input type='password' placeholder='*****'/>
-        <Button label= "Login" clickfunction={login} />
+      <h1>Login Form</h1>
+    <Input type="text" placeholder="john@mail.com"/>
+     
+      <Input type="password" placeholder="*****" />
 
-
-
+      <Button label="Login" clickfunction={login} />
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;
