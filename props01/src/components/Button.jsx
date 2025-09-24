@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Button({label}) {
+function Button({label, clickfunction}) {
   return (
-    <button>{label}</button>
+    <button onClick={clickfunction}>{label}</button>
   )
 }
 
