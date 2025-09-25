@@ -10,10 +10,10 @@ function Register() {
     <div>
       <h2>Register Form</h2>
      
-      <Input type="text" placeholder="your name" />
-      <Input type="email" placeholder="enter your mail" />
-      <Input type="password" placeholder="enter your password" />
-      <Input type="text" placeholder="enter your Mobile number" />
+      <Input type="text" placeholder="Enter your name" />
+      <Input type="email" placeholder="Enter your mail" />
+      <Input type="password" placeholder="Enter your password" />
+      <Input type="text" placeholder="Enter your Mobile number" />
       <Button label="Register" clickfunction={register} />
     </div>
   );
