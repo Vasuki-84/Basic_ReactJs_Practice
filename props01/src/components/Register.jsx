@@ -1,22 +1,23 @@
+
 import React from "react";
 import Button from "./Button";
 import Input from "./input";
+import "./Register.css";
 
 function Register() {
-    const register = () => {
-        alert("Registration successful");
-    }
   return (
-    <div>
-      <h2>Register Form</h2>
-     
-      <Input type="text" placeholder="Enter your name" />
-      <Input type="email" placeholder="Enter your mail" />
-      <Input type="password" placeholder="Enter your password" />
-      <Input type="text" placeholder="Enter your Mobile number" />
-      <Button label="Register" clickfunction={register} />
+    <div className="register-container">
+      <form className="register-form">
+        <h2 className="form-title">Register</h2>
+        <input type="text" className="input-field" placeholder="Full Name" />
+        <input type="email" className="input-field" placeholder="Email" />
+        <input type="password" className="input-field" placeholder="Password" />
+        <button type="submit" className="submit-btn">Register</button>
+      </form>
     </div>
   );
 }
 
 export default Register;
+
+

@@ -1,20 +1,17 @@
 import React from "react";
 import Button from "./Button";
 import Input from "./input";
-import "./Login.css"
+import "./Login.css";
 
 function Login() {
-  const login = () => {
-    alert("Login successfull");
-  };
   return (
-    <div>
-      <h1>Login Form</h1>
-    <Input type="text" placeholder="john@mail.com"/>
-     
-      <Input type="password" placeholder="*****" />
-
-      <Button label="Login" clickfunction={login} />
+    <div className="login-container">
+      <form className="login-form">
+        <h2 className="form-title">Login</h2>
+        <input type="email" className="input-field" placeholder="Email" />
+        <input type="password" className="input-field" placeholder="Password" />
+        <button type="submit" className="submit-btn">Login</button>
+      </form>
     </div>
   );
 }
